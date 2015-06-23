@@ -11,7 +11,19 @@ sublime_package:
     - name: sublime-text-installer
     - refresh: True
 
-install-otrs:
+/home/tux/.config/sublime-text-3/Installed Packages:
+  file.directory:
+    - user: tux
+    - group: tux
+    - makedirs: True
+
+/home/tux/.config/sublime-text-3/Packages/User:
+  file.directory:
+    - user: tux
+    - group: tux
+    - makedirs: True
+
+package_control:
   cmd.run:
     - name: |
         wget https://sublime.wbond.net/Package%20Control.sublime-package
@@ -26,6 +38,8 @@ install-otrs:
   file.managed:
   - source: salt://sublime/files/Package Control.sublime-settings
   - template: jinja
+  - user: tux
+  - group: tux
   - require:
     - pkg: sublime_package
 
@@ -33,6 +47,8 @@ install-otrs:
   file.managed:
   - source: salt://sublime/files/Anaconda.sublime-settings
   - template: jinja
+  - user: tux
+  - group: tux
   - require:
     - pkg: sublime_package
 
@@ -40,6 +56,8 @@ install-otrs:
   file.managed:
   - source: salt://sublime/files/Preferences.sublime-settings
   - template: jinja
+  - user: tux
+  - group: tux
   - require:
     - pkg: sublime_package
 
