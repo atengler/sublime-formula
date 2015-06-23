@@ -11,6 +11,17 @@ sublime_package:
     - name: sublime-text-installer
     - refresh: True
 
+install-otrs:
+  cmd.run:
+    - name: |
+        wget https://sublime.wbond.net/Package%20Control.sublime-package
+    - cwd: /home/tux/.config/sublime-text-3/Installed Packages/
+    - shell: /bin/bash
+    - timeout: 300
+    - unless: test -x /home/tux/.config/sublime-text-3/Installed Packages/Package Control.sublime-package
+    - require:
+      - pkg: sublime_package
+
 /home/tux/.config/sublime-text-3/Packages/User/Package Control.sublime-settings:
   file.managed:
   - source: salt://sublime/files/Package Control.sublime-settings
