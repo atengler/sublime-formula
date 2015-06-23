@@ -11,7 +11,7 @@ sublime_package:
     - name: sublime-text-installer
     - refresh: True
 
-/home/tux/.config/sublime-text-3/Packages/User/Package\ Control.sublime-settings:
+/home/tux/.config/sublime-text-3/Packages/User/Package Control.sublime-settings:
   file.managed:
   - source: salt://sublime/files/Package Control.sublime-settings
   - template: jinja
