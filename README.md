@@ -1,2 +1,1 @@
-# otrs-formula
-OTRS Salt formula
+Sublime Text 3 - Salt formula
