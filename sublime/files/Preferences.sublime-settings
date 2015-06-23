@@ -1,14 +1,14 @@
 {
     "auto_complete": false,
-    "color_scheme": "Packages/User/SublimeLinter/Flatland Monokai (SL).tmTheme",
+    "color_scheme": "Packages/Theme - Flatland/Flatland Dark.tmTheme",
     "ignored_packages":
     [
         "Vintage"
     ],
     "sublimelinter": false,
-    "tab_size": 2,
     "theme": "Flatland Dark.sublime-theme",
     "word_wrap": true,
     "tab_size": 2,
     "translate_tabs_to_spaces": true
+}
 }
