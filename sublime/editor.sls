@@ -61,4 +61,13 @@ package_control:
   - require:
     - pkg: sublime_package
 
+/home/tux/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap:
+  file.managed:
+  - source: salt://sublime/files/Default (Linux).sublime-keymap
+  - template: jinja
+  - user: tux
+  - group: tux
+  - require:
+    - pkg: sublime_package
+
 {%- endif %}
