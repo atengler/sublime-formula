@@ -1,0 +1,6 @@
+applications:
+- sublime
+parameters:
+  sublime:
+    editor:
+      enabled: true
